@@ -138,7 +138,7 @@ const jumpTo = (url) => {
         height: 260px;
         min-height: 140px;
         .bg {
-          font-size: 5rem;
+          font-size: 3rem;
         }
 
         .sm {
