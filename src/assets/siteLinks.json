@@ -2,21 +2,21 @@
   {
     "icon": "Compass",
     "name": "个人主页",
-    "link": "https://www.joker2yue.cn/"
+    "link": "https://www.joker2yue.com/"
   },
   {
     "icon": "Blog",
     "name": "博客",
-    "link": "https://blog.joker2yue.cn/"
+    "link": "https://blog.joker2yue.com/"
   },
   {
     "icon": "CompactDisc",
     "name": "音乐",
-    "link": "https://blog.joker2yue.cn/music/?id=648886106&server=netease"
+    "link": "https://blog.joker2yue.com/music/?id=648886106&server=netease"
   },
   {
     "icon": "Brain",
     "name": "ChatGPT",
-    "link": "https://gpt.joker2yue.cn/"
+    "link": "https://gpt.joker2yue.com/"
   }
 ]
