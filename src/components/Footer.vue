@@ -5,21 +5,20 @@
         <span>
           <span :class="startYear < fullYear ? 'c-hidden' : 'hidden'">Copyright&nbsp;</span>
           &copy;
-          <span v-if="startYear < fullYear"
-            class="site-start">
+          <span v-if="startYear < fullYear" class="site-start">
             {{ startYear }}
             -
           </span>
           {{ fullYear }}
           <a :href="siteUrl">{{ siteAuthor }}</a>
         </span>
-        <!-- 站点备案 -->
-        <span>
-          &amp;
-          <a v-if="siteIcp" href="https://beian.miit.gov.cn" target="_blank">
-            {{ siteIcp }}
-          </a>
-        </span>
+        <!-- 站点备案（已移除） -->
+        <!--<span>-->
+        <!--  &amp;-->
+        <!--  <a v-if="siteIcp" href="https://beian.miit.gov.cn" target="_blank">-->
+        <!--    {{ siteIcp }}-->
+        <!--  </a>-->
+        <!--</span>-->
       </div>
       <div v-else class="lrc">
         <Transition name="fade" mode="out-in">
@@ -45,8 +44,9 @@ const fullYear = new Date().getFullYear();
 // 加载配置数据
 // const siteStartDate = ref(import.meta.env.VITE_SITE_START);
 const startYear = ref(
-  import.meta.env.VITE_SITE_START?.length >= 4 ? 
-  import.meta.env.VITE_SITE_START.substring(0, 4) : null
+  import.meta.env.VITE_SITE_START?.length >= 4
+    ? import.meta.env.VITE_SITE_START.substring(0, 4)
+    : null,
 );
 const siteIcp = ref(import.meta.env.VITE_SITE_ICP);
 const siteAuthor = ref(import.meta.env.VITE_SITE_AUTHOR);
